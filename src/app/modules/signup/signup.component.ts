@@ -16,7 +16,7 @@ export class SignupComponent implements OnInit {
   isSignedin: boolean = false;
   errorMessage: string = "";
   id: any = "form1"
-  currentBal: any = Math.floor(Math.random() * (2500 - 1000 + 1)) + 1000
+  currentBal: any = Math.floor(Math.random() * (4500 - 2000 + 1)) + 2000
 
   constructor(private firebaseService: FirebaseService, private formBuilder: FormBuilder, private route: ActivatedRoute, private router: Router) { }
 
