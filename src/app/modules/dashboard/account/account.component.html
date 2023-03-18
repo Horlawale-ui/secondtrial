@@ -36,16 +36,16 @@
           <!-- User Information -->
           <div class="user-info">
             <h5 class="">User Information</h5>
-            <div class="user-name">
+<!--             <div class="user-name">
               <label for="name">Username</label>
-              <input type="text" name="name" [(ngModel)]="user.userName" />
-            </div>
+              <input type="text" name="name" [(ngModel)]="user?.userName" />
+            </div> -->
             <div class="email">
               <label for="email">Email</label>
               <input
                 type="email"
                 name="email"
-                [(ngModel)]="user.emailAddress"
+                [(ngModel)]="user?.emailAddress"
               />
             </div>
             <div class="full-name">
@@ -54,7 +54,7 @@
                 type="text"
                 id="fullname"
                 name="fullname"
-                [(ngModel)]="user.fullName"
+                [(ngModel)]="user?.lastName + ' ' + user?.firstName "
               />
             </div>
           </div>
@@ -65,18 +65,18 @@
               <label for="address">Address</label>
               <input
                 type="text"
-                placeholder="14B Parkview Estate"
+                placeholder="Address"
                 id="address"
-                class=""
+                 [(ngModel)]="user?.address"
               />
             </div>
             <div class="country">
               <label for="country">Country</label>
-              <input type="text" placeholder="Nigeria" id="country" class="" />
+              <input type="text" placeholder="State" id="country"  [(ngModel)]="user?.state" />
             </div>
             <div class="number">
               <label for="number">Mobile Number</label>
-              <input type="tel" name="number" [(ngModel)]="user.telNumber" />
+              <input type="tel" name="number" [(ngModel)]="user?.phoneNumber" />
             </div>
           </div>
 
