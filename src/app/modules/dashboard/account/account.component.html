@@ -54,7 +54,7 @@
                 type="text"
                 id="fullname"
                 name="fullname"
-                [(ngModel)]="user?.lastName + ' ' + user?.firstName "
+                [(ngModel)]="user.lastName + ' ' + user.firstName "
               />
             </div>
           </div>
@@ -67,16 +67,16 @@
                 type="text"
                 placeholder="Address"
                 id="address"
-                 [(ngModel)]="user?.address"
+                 [(ngModel)]="user.address"
               />
             </div>
             <div class="country">
               <label for="country">Country</label>
-              <input type="text" placeholder="State" id="country"  [(ngModel)]="user?.state" />
+              <input type="text" placeholder="State" id="country"  [(ngModel)]="user.state" />
             </div>
             <div class="number">
               <label for="number">Mobile Number</label>
-              <input type="tel" name="number" [(ngModel)]="user?.phoneNumber" />
+              <input type="tel" name="number" [(ngModel)]="user.phoneNumber" />
             </div>
           </div>
 
